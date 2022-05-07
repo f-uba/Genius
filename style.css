@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color: rgb(208, 255, 239);
+    background-image: url(background.jpg);
+    background-size: cover;
 }
 
 .mainGame {
@@ -15,8 +16,8 @@ body {
     display: grid;
     grid-template-areas: 'greenZone redZone' 'yellowZone blueZone';
     grid-gap: 10px;
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
+    border: 10px solid #a5a3a379;
+    background-color: #a5a3a379;
     border-radius: 100%;
     width: 700px;
     height: 700px; 
@@ -26,26 +27,30 @@ body {
     grid-area: blueZone;
     background-color: blue;
     border-bottom-right-radius: 100%;
+    border: 10px solid #00039e79;
 }
 
 .red {
     grid-area: redZone;
     background-color: red;
     border-top-right-radius: 100%;
+    border: 10px solid #a1010179;
 }
 
 .yellow {
     grid-area: yellowZone;
     background-color: yellow;
     border-bottom-left-radius: 100%;
+    border: 10px solid #9e9e0079;
 }
 
 .green {
     grid-area: greenZone;
     background-color: green;
     border-top-left-radius: 100%;
+    border: 10px solid #10a80279;
 }
 
 .selected {
-    opacity: 0.8;
+    opacity: 0.5;
 }
