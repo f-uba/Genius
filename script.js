@@ -33,7 +33,7 @@ let lightColor = (element, number) => {
 
     setTimeout(() => {
         element.classList.remove('selected');
-    })
+    });
 }
 
 let checkOrder = () => {
@@ -48,4 +48,15 @@ let checkOrder = () => {
         alert('Pontuação: ' + score + '\nVocê acertou! Iniciando próximo nível!');
         nextLevel();
     }
+}
+
+let click = (color) => {
+    clickedOrder[clickedOrder.length] = color;
+    createColorElement(color).classList.add('selected');
+
+    setTimeout(() => {
+        createColorElement(color).classList.remove('selected');
+    });
+
+    checkOrder();
 }
